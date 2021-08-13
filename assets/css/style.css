@@ -1,0 +1,169 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#clear{
+    clear: both;
+}
+#main{
+
+}
+#nav {
+    display: inline-block;
+}
+#header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+
+}
+#nav, .subnav{
+    list-style-type: none;
+
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav>li>a{
+    text-transform: uppercase;
+ color: #fff;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav >li:hover> a,
+#nav .subnav li:hover a{
+        color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover a{
+
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav a{
+    line-height: 38px;
+    padding: 0 12px;
+    color: #000;
+}
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+position: absolute;
+}
+#header .search-button:hover{
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-button{
+    float: right;
+    padding: 0 20px;
+}
+#header .search-button .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+
+
+
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    bottom: 47px;
+
+}
+#slider .text-heading{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+#slider .text-discription{
+    margin-top: 25px;
+    font-size: 15px;
+}
+#content{
+
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+ text-align: center;
+ letter-spacing: 500;
+ font-weight: 500;
+ letter-spacing: 4px;
+ font-size: 30px;
+
+}
+
+#content .section-sub-heading{
+    padding: 25px 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 60%;
+    font-size: 15px;
+
+}
+#content .about-content{
+    text-align: center;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+}
+#content .member-list{
+    overflow: hidden;
+     margin-top: 48px;
+}
+#content .member-item{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+#footer{
+
+}
